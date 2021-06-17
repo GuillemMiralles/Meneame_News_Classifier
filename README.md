@@ -1,4 +1,4 @@
-# PLN-Clasificador
+# PLN-Clasificador / Python (Jupyter Notebook)
 Clasificador del tipo de noticia de la base de datos de meneame.net. 
 
 Este conjunto de datos disponible en http://oceano.uv.es/SB/meneame.csv.zip y 
