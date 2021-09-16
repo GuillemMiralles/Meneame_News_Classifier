@@ -11,3 +11,5 @@ La mayor parte de las noticias están en español.
 Vamos a predecir la categoria de la noticia en base a su texto.
 La clase a predecir es el tipo de noticia (columna SUB de la base de datos), 
 a partir de las columnas de NOTICIA y EXTRACTO.
+
+Artículo explicativo: https://guillemmiralles1.medium.com/news-classification-unbalanced-classes-nlp-e865ac33eb85
