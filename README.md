@@ -6,11 +6,21 @@ The project focuses on Natural Language Processing (NLP) and aims to classify ne
 ## Techniques:🔮
 Feature extraction is performed using sparse vector models such as Bag of Words and TF-IDF. Various classifiers, including Logistic Regression, Multinomial Naive Bayes, and Decision Trees, are trained on the extracted features. The models are evaluated using the F1 Score, which considers precision and recall, making it suitable for imbalanced class distributions. Class balancing is implemented using oversampling with SMOTE to improve classification performance.
 
-Results:🎯
-The decision trees perform poorly compared to other models. The models struggle with predicting the leisure category and tend to predict a majority as current news, resulting in a high F1 score in that class. 
+## Results:🎯
+The decision trees perform poorly compared to other models. The models struggle with predicting the leisure category and tend to predict a majority as current news.
 
-Balancing the classes leads to improved results, especially in the leisure category. Topic modeling using LSA and dense vector models like Doc2Bow further enhance the prediction accuracy. The LinearSVC model trained on LSA performs well, while Doc2Bow-based SVC shows good results, particularly in predicting the leisure class. 
+Balancing the classes leads to improved results, especially in the leisure category. 
+
+The best models are:
+
+| Task | Accuracy | Interpretability Score |
+| --- | --- | --- |
+| Logistic Regression with TF-IDF | 0.7761 | 0.88 |
+| SGDClassifier with Bag Of Words | 0.7768 | 0.88 |
+| Multinomial MB with Bag Of Words | 0.7761 | 0.88 |
+
+Topic modeling using LSA and dense vector models like Doc2Bow further enhance the prediction accuracy. The LinearSVC model trained on LSA performs well, while Doc2Bow-based SVC shows good results, particularly in predicting the leisure class. 
 
 A multilayer perceptron model using Keras does not achieve a satisfactory F1 score overall but performs better in classifying the leisure category. The Logistic Regression model with TF-IDF is selected as the best model due to its highest F1 score among the top models considered.
 
-Explanatory article: https://guillemmiralles1.medium.com/news-classification-unbalanced-classes-nlp-e865ac33eb85
+### [The Complete Article in Medium] (https://guillemmiralles1.medium.com/news-classification-unbalanced-classes-nlp-e865ac33eb85)📜
