@@ -1,15 +1,16 @@
-# PLN-Clasificador / Python (Jupyter Notebook)
-Clasificador del tipo de noticia de la base de datos de meneame.net. 
+# News Categorizer: NLP's Quest to Sort Meneame.net News 📰🏷🕶
 
-Este conjunto de datos disponible en http://oceano.uv.es/SB/meneame.csv.zip y 
-incluye la información de las noticias que aparecen en la portada de la web 
-www.meneame.net. 
+## Introduction 🧐
+The project focuses on Natural Language Processing (NLP) and aims to classify news articles from the meneame.net dataset. The dataset contains 177,000 news articles, and the goal is to create a model that can accurately classify articles into specific categories. The dataset suffers from class imbalance, with one category dominating the data. Four relevant classes, including technology, leisure, current news, and culture, are selected for classification. Text normalization techniques are applied to clean the data, and it is split into training and test sets.
 
-Los datos van desde Diciembre de 2005 hasta el 4 de diciembre de 2017.
-La mayor parte de las noticias están en español. 
+## Techniques:🔮
+Feature extraction is performed using sparse vector models such as Bag of Words and TF-IDF. Various classifiers, including Logistic Regression, Multinomial Naive Bayes, and Decision Trees, are trained on the extracted features. The models are evaluated using the F1 Score, which considers precision and recall, making it suitable for imbalanced class distributions. Class balancing is implemented using oversampling with SMOTE to improve classification performance.
 
-Vamos a predecir la categoria de la noticia en base a su texto.
-La clase a predecir es el tipo de noticia (columna SUB de la base de datos), 
-a partir de las columnas de NOTICIA y EXTRACTO.
+Results:🎯
+The decision trees perform poorly compared to other models. The models struggle with predicting the leisure category and tend to predict a majority as current news, resulting in a high F1 score in that class. 
 
-Artículo explicativo: https://guillemmiralles1.medium.com/news-classification-unbalanced-classes-nlp-e865ac33eb85
+Balancing the classes leads to improved results, especially in the leisure category. Topic modeling using LSA and dense vector models like Doc2Bow further enhance the prediction accuracy. The LinearSVC model trained on LSA performs well, while Doc2Bow-based SVC shows good results, particularly in predicting the leisure class. 
+
+A multilayer perceptron model using Keras does not achieve a satisfactory F1 score overall but performs better in classifying the leisure category. The Logistic Regression model with TF-IDF is selected as the best model due to its highest F1 score among the top models considered.
+
+Explanatory article: https://guillemmiralles1.medium.com/news-classification-unbalanced-classes-nlp-e865ac33eb85
