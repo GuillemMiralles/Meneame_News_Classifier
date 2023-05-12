@@ -24,4 +24,4 @@ Topic modeling using LSA and dense vector models like Doc2Bow further enhance th
 
 A multilayer perceptron model using Keras does not achieve a satisfactory F1 score overall but performs better in classifying the leisure category. The Logistic Regression model with TF-IDF is selected as the best model due to its highest F1 score among the top models considered.
 
-### [The Complete Article in Medium] (https://guillemmiralles1.medium.com/news-classification-unbalanced-classes-nlp-e865ac33eb85)📜
+### [The Complete Article in Medium](https://guillemmiralles1.medium.com/news-classification-unbalanced-classes-nlp-e865ac33eb85)📜
