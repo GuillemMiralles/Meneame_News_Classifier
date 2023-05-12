@@ -13,11 +13,12 @@ Balancing the classes leads to improved results, especially in the leisure categ
 
 The best models are:
 
-| Task | Accuracy | Interpretability Score |
+| Task | F1 | Leisure F1 |
 | --- | --- | --- |
 | Logistic Regression with TF-IDF | 0.7761 | 0.88 |
 | SGDClassifier with Bag Of Words | 0.7768 | 0.88 |
-| Multinomial MB with Bag Of Words | 0.7761 | 0.88 |
+| SVC with Doc2Bow | 0.7699 | 0.53 |
+
 
 Topic modeling using LSA and dense vector models like Doc2Bow further enhance the prediction accuracy. The LinearSVC model trained on LSA performs well, while Doc2Bow-based SVC shows good results, particularly in predicting the leisure class. 
 
