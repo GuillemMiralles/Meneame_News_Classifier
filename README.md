@@ -15,9 +15,9 @@ The best models are:
 
 | Task | F1 | Leisure F1 |
 | --- | --- | --- |
-| Logistic Regression with TF-IDF | 0.7761 | 0.88 |
-| SGDClassifier with Bag Of Words | 0.7768 | 0.88 |
-| SVC with Doc2Bow | 0.7699 | 0.53 |
+| SVC with Doc2Bow | 0.7655 | 0.52 |
+| Logistic Regression with TF-IDF | 0.7741 | 0.45 |
+| Linear SVC with LSA | 0.7589 | 0.38 |
 
 
 Topic modeling using LSA and dense vector models like Doc2Bow further enhance the prediction accuracy. The LinearSVC model trained on LSA performs well, while Doc2Bow-based SVC shows good results, particularly in predicting the leisure class. 
